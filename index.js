@@ -19,7 +19,7 @@ app.get('/',function(req,res){
         res.render('index.html');
 });
 
-var server = app.listen(80, function(){
+var server = app.listen(3000, function(){
         console.log("The server has started on port 80");
 });
 
