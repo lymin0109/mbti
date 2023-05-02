@@ -12,20 +12,27 @@
 
 var express = require('express');
 var app = express();
-var mysql = require('mysql')
+/*var mysql = require('mysql')
 var client = mysql.createConnection({
         user:'root',
         password:'qwerty12345',
         database:'mydb'
-});
+});*/
 
 app.use(express.static(__dirname + '/public'));
 
-app.get('/',function(req,res){
+app.get('/start',function(req,res){
         res.render('index.html');
 });
+app.get('/main',function(req,res){
+        res.render('main.html');
+});
+app.get('/result',function(req,res){
+        res.render('result.html');
+});
+
 
 var server = app.listen(3000, function(){
-        console.log("The server has started on port 80");
+        console.log("The server has started on port 3000");
 });
 
