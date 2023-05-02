@@ -12,6 +12,12 @@
 
 var express = require('express');
 var app = express();
+var mysql = require('mysql')
+var client = mysql.createConnection({
+        user:'root',
+        password:'qwerty12345',
+        database:'mydb'
+});
 
 app.use(express.static(__dirname + '/public'));
 
