@@ -84,7 +84,7 @@ const qnaList = [
     a: [
       { answer: 'a. 금', score: 0, score2: 0, score3: 0, score4: 0 },
       { answer: 'b. 부동산', score: 0, score2: 0, score3: 0, score4: 1 },
-      { answer: 'c. ', score: 0, score2: 0, score3: 0, score4: 2 },
+      { answer: 'c. 원유', score: 0, score2: 0, score3: 0, score4: 2 },
       { answer: 'd. 비트코인', score: 0, score2: 0, score3: 0, score4: 3 }
     ]
   }
