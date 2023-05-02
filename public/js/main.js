@@ -70,7 +70,7 @@ const calcScore3 = () => {
 const calcScore4 = () => {
   let point4 = 0;
   for (let i = 0; i < ENDPOINT; i++) {
-    point4 += qnaList[i].a[select[i]].score3;
+    point4 += qnaList[i].a[select[i]].score4;
   }
   return point4;
 }
@@ -175,7 +175,7 @@ const goResult = () => {
   res_img.title = infoList4[grade4_2].name + infoList[grade].name;
   res_img_div.appendChild(res_img);
   animal.innerHTML = infoList4[grade4_2].name + infoList[grade].name;
-  desc.innerHTML = infoList4[grade4_2].desc + "<br>" + infoList[grade].desc + "<br>" + infoList3[grade3_2].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + infoList[grade].desc2 + infoList3[grade3_2].desc2 + infoList2[grade2_2].desc2 + infoList4[grade4_2].desc2;
+  desc.innerHTML = infoList4[grade4_2].desc + "<br>" + infoList[grade].desc + "<br>" + infoList3[grade3_2].desc + "<br>" + infoList2[grade2_2].desc + "<br>" + "<br>" + "<추천자산>" + "<br>" + "<a href='" + infoList3[grade3_2].link + "'>" + infoList3[grade3_2].desc2 + "<br>" + "<a href='" + infoList2[grade2_2].link + "'>" + infoList2[grade2_2].desc2 + "<br>" + "<a href='" + infoList4[grade4_2].link + "'>" + infoList4[grade4_2].desc2;
 
   setTimeout(() => {
     header.style.display = 'block';
@@ -304,7 +304,7 @@ const load = () => {
   u_name.addEventListener('blur', () => {
     try {
       if (u_name.value.length < 1) {
-        throw '이메일을 입력하고 시작해 주세요.';
+        throw '이름을 입력하고 시작해 주세요.';
       }
       msg.innerHTML = '';
     } catch (err) {
@@ -315,7 +315,7 @@ const load = () => {
   start_btn.addEventListener('click', () => {
     try {
       if (u_name.value.length < 1) {
-        throw '이메일을 입력하고 시작해 주세요.';
+        throw '이름을 입력하고 시작해 주세요.';
       }
       msg.innerHTML = '';
       start_btn.disabled = true;
